@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/hermes-agent-12?utm_medium=integration&utm_source=button&utm_campaign=hermes-agent)
+
 # Hermes Agent on Railway
 
 Railway template for [Hermes Agent](https://github.com/NousResearch/hermes-agent), the open-source, self-improving AI agent by Nous Research (MIT).
