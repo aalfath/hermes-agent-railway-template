@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased (2026-11-16)
+
+- README: Deploy on Railway button for the published template `hermes-agent-12`. No change to the image or the service.
+
 ## v0.23.1 (2026-11-16)
 
 - First release of the template: Hermes Agent v0.23.1 (`nousresearch/hermes-agent:v0.23.1@sha256:276d44685c65c0cb2a25f190b63c65c8906f9dc76486fb1c05ae71b5826bda08`).
