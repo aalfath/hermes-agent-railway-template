@@ -12,7 +12,10 @@ One service, built from this repo:
 - **Volume:** `/opt/data` holds everything: `config.yaml`, `.env` (API keys you add in the dashboard), sessions, memory, skills and logs.
 - **Health check:** `GET /api/status` (public, no login).
 
-[`railway-start.sh`](railway-start.sh) sets the defaults below and then hands over to the image's own entrypoint. Nothing else is changed.
+Two small wrapper files, nothing else changed:
+
+- [`railway-start.sh`](railway-start.sh) sets the defaults below and hands over to the image's own entrypoint.
+- [`railway-trusted-proxies.sh`](railway-trusted-proxies.sh) runs once at boot. If `dashboard.trusted_proxies` is empty, it sets it to Railway's edge range (`100.64.0.0/10`), so login cookies are marked `Secure` and the password-login rate limit counts each visitor. A value you set yourself is kept. Set `RAILWAY_TRUSTED_PROXY_CIDR` to an empty value to skip it.
 
 ## Variables
 
